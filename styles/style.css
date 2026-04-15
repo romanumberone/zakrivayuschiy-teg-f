@@ -304,15 +304,16 @@
 }
 
 .img-4 {
-  filter: brightness(30%);
+  filter: grayscale(30%);
+  ;
 }
 
 .img-5 {
-  filter: contrast(130%);
+  filter: hue-rotate(2turn);
 }
 
 .img-6 {
-  filter: contrast(130%);
+  filter: invert(20%);
 }
 
 .img-7 {
