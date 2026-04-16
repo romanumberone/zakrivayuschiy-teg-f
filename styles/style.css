@@ -10,7 +10,7 @@
 */
 
 .page {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), serif;
   font-size: var(--text-size);
   font-variation-settings: var(--main-font-weight);
   min-inline-size: 320px;
@@ -30,19 +30,19 @@
   margin: 100px 0;
   background-color: var(--bg-color);
   border: var(--border);
-  block-size: var(--header-block-size);
+  padding: 130px 0;
   inline-size: var(--inline-size);
   align-items: center;
   justify-content: center;
 }
 
 .logo {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy, serif;
   font-size: var(--logo-title-size);
 }
 
 .header_title {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy, serif;
   font-size: var(--main-title-size);
   text-transform: uppercase;
 }
@@ -74,7 +74,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, serif;
   text-transform: uppercase;
   opacity: 0.5;
   font-size: 14px;
@@ -83,6 +83,8 @@
     0 1px var(--text-color-stroke),
     1px 0 var(--text-color-stroke),
     0 -1px var(--text-color-stroke);
+  mix-blend-mode: hard-light;
+
 }
 
 .card__image {
@@ -103,12 +105,12 @@
 .card__button {
   display: flex;
   justify-content: right;
-  gap: 12px;
+  /* gap: 12px; */
 }
 
 
 .button {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, serif;
   position: relative;
   font-size: 14px;
   display: inline-flex;
@@ -202,7 +204,7 @@
 .card__save-button {
   display: flex;
   gap: 8px;
-  padding: 20px 17px;
+  padding: 17px 20px;
 }
 
 /* hover */
@@ -258,7 +260,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-block-size: 191px;
   max-inline-size: 353px;
   border: none;
   padding: 30px;
@@ -269,7 +270,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, serif;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
@@ -282,7 +283,7 @@
 }
 
 .popup[open]::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 
@@ -332,5 +333,9 @@
   .card__save-button {
     flex-direction: column;
     min-inline-size: 306px;
+  }
+
+  .header {
+    padding: 122px 0;
   }
 }
